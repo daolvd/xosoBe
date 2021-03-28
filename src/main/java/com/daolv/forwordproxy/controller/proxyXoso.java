@@ -18,6 +18,13 @@ import java.io.IOException;
 @RestController("/")
 public class proxyXoso {
 
+    @GetMapping()
+    public String home(){
+        return "ok";
+
+    }
+
+
     @GetMapping("getketqua")
     public ResponseEntity<?> getXoSoPhp(@RequestParam ("type") String type) throws IOException {
         OkHttpClient client = new OkHttpClient().newBuilder()
