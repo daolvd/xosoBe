@@ -50,6 +50,7 @@ public class proxyXoso {
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type",response.headers().get("Content-Type"));
         headers.add("Date",response.headers().get("Date"));
+        res = res.replace("/images/loading_2.gif","https://www.kqxs.vn/images/loading_2.gif");
         ResponseEntity responseEntity = new ResponseEntity<>(res,headers, HttpStatus.OK);
         return responseEntity;
     }
