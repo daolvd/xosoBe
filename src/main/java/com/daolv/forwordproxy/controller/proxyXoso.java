@@ -53,7 +53,8 @@ public class proxyXoso {
         res = res.replace("/images/loading_2.gif","https://www.kqxs.vn/images/loading_2.gif");
 
       //  String pattern = "(.*)( <div class=\"message-result\">a-z0-9_-\n/)(.*)";
-        res = res.replaceAll("                    Soạn: <span class=\"highlight\">XSMB</span> gửi <span\n" +
+        res = res.replaceAll("                                    <div class=\"message-result\">\n" +
+                "                    Soạn: <span class=\"highlight\">XSMB</span> gửi <span\n" +
                 "                            class=\"highlight\">8110</span> nhận ngay kết quả <span\n" +
                 "                            class=\"highlight\">Miền Bắc</span> sớm nhất!\n" +
                 "                </div>","");
