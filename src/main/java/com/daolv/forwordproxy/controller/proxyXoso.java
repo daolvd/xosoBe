@@ -56,7 +56,7 @@ public class proxyXoso {
         res = res.replaceAll("                    Soạn: <span class=\"highlight\">XSMB</span> gửi <span\n" +
                 "                            class=\"highlight\">8110</span> nhận ngay kết quả <span\n" +
                 "                            class=\"highlight\">Miền Bắc</span> sớm nhất!\n" +
-                "                </div>","<img src='https://kubet365.net/wp-content/uploads/2021/03/tim-kubet365-800x267.jpg'/>");
+                "                </div>"," <div class=\"message-result\">\n<img src='https://kubet365.net/wp-content/uploads/2021/03/tim-kubet365-800x267.jpg'/>  </div>");
         res = res.replaceAll("                                    <div class=\"message-result\">\n" +
                 "                        Soạn: <span class=\"highlight\">XSTN</span> gửi\n" +
                 "                        <span\n" +
@@ -74,7 +74,7 @@ public class proxyXoso {
                 "                        <span\n" +
                 "                                class=\"highlight\">8110</span> nhận ngay kết quả <span\n" +
                 "                                class=\"highlight\">Bình Thuận</span> sớm nhất!\n" +
-                "                    </div>","<img src='https://kubet365.net/wp-content/uploads/2021/03/tim-kubet365-800x267.jpg'/>");
+                "                    </div>"," <div class=\"message-result\">\n<img src='https://kubet365.net/wp-content/uploads/2021/03/tim-kubet365-800x267.jpg'/>  </div>");
         res = res.replaceAll("                                    <div class=\"message-result\">\n" +
                 "                        Soạn: <span class=\"highlight\">XSQB</span> gửi\n" +
                 "                        <span\n" +
@@ -92,7 +92,7 @@ public class proxyXoso {
                 "                        <span\n" +
                 "                                class=\"highlight\">8110</span> nhận ngay kết quả <span\n" +
                 "                                class=\"highlight\">Quảng Trị</span> sớm nhất!\n" +
-                "                    </div>","<img src='https://kubet365.net/wp-content/uploads/2021/03/tim-kubet365-800x267.jpg'/>");
+                "                    </div>"," <div class=\"message-result\">\n<img src='https://kubet365.net/wp-content/uploads/2021/03/tim-kubet365-800x267.jpg'/>  </div>");
         System.out.println(res);
         ResponseEntity responseEntity = new ResponseEntity<>(res,headers, HttpStatus.OK);
         return responseEntity;
