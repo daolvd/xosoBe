@@ -51,6 +51,25 @@ public class proxyXoso {
         headers.add("Content-Type",response.headers().get("Content-Type"));
         headers.add("Date",response.headers().get("Date"));
         res = res.replace("/images/loading_2.gif","https://www.kqxs.vn/images/loading_2.gif");
+        res = res.replace("        <li class=\"active\" data-id=\"northern\">\n" +
+                "            <span>Miền Bắc</span>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"southern\">\n" +
+                "            <span>Miền Nam</span>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"central\">\n" +
+                "            <span>Miền Trung</span>\n" +
+                "        </li>\n" +
+                "    </ul>","        <li class=\"active\" data-id=\"northern\">\n" +
+                "            <a href =\"https://kubet24h.com/xo-so-mien-bac/\"><span>Miền Bắc</span></a>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"southern\">\n" +
+                "           <a href =\"https://kubet24h.com/xo-so-mien-nam/\"> <span>Miền Nam</span></a>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"central\">\n" +
+                "           <a href =\"https://kubet24h.com/xo-so-mien-trung/\"> <span>Miền Trung</span></a>\n" +
+                "        </li>\n" +
+                "    </ul>");
         System.out.println(res);
         ResponseEntity responseEntity = new ResponseEntity<>(res,headers, HttpStatus.OK);
         return responseEntity;
@@ -114,6 +133,26 @@ public class proxyXoso {
         headers.add("Content-Type",response.headers().get("Content-Type"));
         headers.add("Date",response.headers().get("Date"));
         // res = res.replace("/images/loading_2.gif","https://www.kqxs.vn/images/loading_2.gif");
+        res = res.replace("/images/loading_2.gif","https://www.kqxs.vn/images/loading_2.gif");
+        res = res.replace("        <li class=\"active\" data-id=\"northern\">\n" +
+                "            <span>Miền Bắc</span>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"southern\">\n" +
+                "            <span>Miền Nam</span>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"central\">\n" +
+                "            <span>Miền Trung</span>\n" +
+                "        </li>\n" +
+                "    </ul>","        <li class=\"active\" data-id=\"northern\">\n" +
+                "            <a href =\"https://kubet24h.com/xo-so-mien-bac/\"><span>Miền Bắc</span></a>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"southern\">\n" +
+                "           <a href =\"https://kubet24h.com/xo-so-mien-nam/\"> <span>Miền Nam</span></a>\n" +
+                "        </li>\n" +
+                "        <li class=\"\" data-id=\"central\">\n" +
+                "           <a href =\"https://kubet24h.com/xo-so-mien-trung/\"> <span>Miền Trung</span></a>\n" +
+                "        </li>\n" +
+                "    </ul>");
         System.out.println(res);
         ResponseEntity responseEntity = new ResponseEntity<>(res,headers, HttpStatus.OK);
         return responseEntity;
