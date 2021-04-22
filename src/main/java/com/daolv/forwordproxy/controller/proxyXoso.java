@@ -89,11 +89,11 @@ public class proxyXoso {
     }
 
     @GetMapping("getlive")
-    public ResponseEntity<?> getXoSoKetLive(@RequestParam("id") String id) throws IOException {
+    public ResponseEntity<?> getXoSoKetLive() throws IOException {
         OkHttpClient client = new OkHttpClient().newBuilder()
                 .build();
         Request request = new Request.Builder()
-                .url("https://www.kqxs.vn/?com=lottery&ctr=lotteryresult&act=result&id="+id+"&ajax=1")
+                .url("https://www.kqxs.vn/?com=lottery&ctr=lotteryresult&act=live&ajax=1")
                 .method("GET", null)
                 .addHeader("Connection", "keep-alive")
                 .addHeader("sec-ch-ua", "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\"")
